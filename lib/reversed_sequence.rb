@@ -1,7 +1,6 @@
 def reverse_seq(n)
+  original = [*1..n]
   reversed = []
-  for i in 1..n
-    reversed << i
-  end
-
+  original.length.times { reversed << original.pop }
+  reversed
 end
